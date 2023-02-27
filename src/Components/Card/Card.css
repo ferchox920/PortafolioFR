@@ -1,0 +1,23 @@
+.card-group{
+    margin-top: 2rem;
+}
+.card-img-top{
+    height: 200px;
+}
+.card img{
+    height: 200px;
+    width: 200px;
+
+}
+.earth{
+    align-items: center;
+
+}
+.psiconecct{
+    align-items: center;
+    background: linear-gradient(
+        190deg,
+        rgba(90, 232, 225, 0.69) 0%,
+        rgba(244, 241, 187, 0.576) 100%
+      );
+}
