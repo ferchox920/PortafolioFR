@@ -1,0 +1,12 @@
+.accordion{
+    margin-top: 3rem;
+
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.accordion-body{
+    align-content: center;
+    padding-left: 3rem;
+    padding-right: 20rem;
+}

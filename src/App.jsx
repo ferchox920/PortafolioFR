@@ -5,11 +5,13 @@ import Home from "./View/Home/Home";
 import LandingPage from "./View/Landing/LandingPage";
 
 import Cards from "./Components/Cards/Cards";
+import Description from "./Components/Description/Description";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Description />
       <Cards />
       <Routes>
         <Route path="/" element={<Home />} />

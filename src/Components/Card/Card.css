@@ -1,5 +1,6 @@
 .card-group{
-    margin-top: 2rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 .card-img-top{
     height: 200px;
@@ -10,6 +11,11 @@
 
 }
 .earth{
+    background: linear-gradient(
+        190deg,
+        rgba(55, 93, 207, 0.69) 0%,
+        rgba(152, 170, 194, 0.576) 100%
+      );
     align-items: center;
 
 }
