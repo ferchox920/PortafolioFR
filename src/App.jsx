@@ -6,6 +6,7 @@ import LandingPage from "./View/Landing/LandingPage";
 
 import Cards from "./Components/Cards/Cards";
 import Description from "./Components/Description/Description";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Description />
       <Cards />
+      <Footer/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/landing" element={<LandingPage />} />
