@@ -1,6 +1,6 @@
 import Navbar from "./Components/NavBar/NavBar";
 import Cards from "./Components/Cards/Cards";
-import Description from "./Components/Description/Description.jsx";
+import Description from "./Components/Description/Description";
 import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import "./App.css";

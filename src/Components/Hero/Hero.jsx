@@ -1,34 +1,48 @@
 import React from "react";
-import './Hero.css'
+import "./Hero.css";
+import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
 
 const Hero = () => {
   return (
-    <div className="jumbotron">
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <h1>Bienvenido a mi sitio web</h1>
-            <p>
-              En este sitio encontrarás información sobre mí y mis habilidades en el desarrollo web.
+    <div className="hero">
+      <Container>
+        <Row className="align-items-center">
+          <Col md={6}>
+            <h1 className="mb-4">¡Hola, soy un desarrollador web!</h1>
+            <p className="lead mb-4">
+              Me encanta desarrollar sitios web y aplicaciones que hagan la vida de las personas más fácil.
             </p>
-          </div>
-          <div className="col">
-            <div className="card" style={{ width: "18rem" }}>
-              <img
-                src="https://via.placeholder.com/150"
-                className="card-img-top"
-                alt="John Doe"
-              />
-              <div className="card-body">
-                <h5 className="card-title">John Doe</h5>
-                <p className="card-text">
-                  Desarrollador Full Stack con experiencia en tecnologías como React, Node.js, y MongoDB.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <Button variant="primary" size="lg">
+              Contáctame
+            </Button>
+          </Col>
+          <Col md={6}>
+            <Carousel>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://via.placeholder.com/600x400/0000FF/808080?text=Imagen%201"
+                  alt="First slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://via.placeholder.com/600x400/FF0000/808080?text=Imagen%202"
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="https://via.placeholder.com/600x400/00FF00/808080?text=Imagen%203"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
