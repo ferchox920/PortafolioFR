@@ -1,7 +1,9 @@
 import React from "react";
 import "./Hero.css";
-import ia from "../../assets/ia1.png"
-import ia2 from "../../assets/ia2.png"
+import ia from "../../assets/ia1.png";
+import ia2 from "../../assets/ia2.png";
+import ia3 from "../../assets/ia3.png";
+import ia4 from "../../assets/ia4.png";
 import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
 
 const Hero = () => {
@@ -12,7 +14,8 @@ const Hero = () => {
           <Col md={6}>
             <h1 className="mb-4">¡Hola, soy un desarrollador web!</h1>
             <p className="lead mb-4">
-              Me encanta desarrollar sitios web y aplicaciones que hagan la vida de las personas más fácil.
+              Me encanta desarrollar sitios web y aplicaciones que hagan la vida
+              de las personas más fácil.
             </p>
             <Button variant="primary" size="lg">
               Contáctame
@@ -21,25 +24,16 @@ const Hero = () => {
           <Col md={6}>
             <Carousel>
               <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={ia}
-                  alt="First slide"
-                />
+                <img className="d-block w-100" src={ia} alt="First slide" />
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={ia2}
-                  alt="Second slide"
-                />
+                <img className="d-block w-100" src={ia2} alt="Second slide" />
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="https://via.placeholder.com/600x400/00FF00/808080?text=Imagen%203"
-                  alt="Third slide"
-                />
+                <img className="d-block w-100" src={ia3} alt="Third slide" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={ia4} alt="Fourth slide" />
               </Carousel.Item>
             </Carousel>
           </Col>
