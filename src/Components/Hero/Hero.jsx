@@ -1,5 +1,7 @@
 import React from "react";
 import "./Hero.css";
+import ia from "../../assets/ia1.png"
+import ia2 from "../../assets/ia2.png"
 import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
 
 const Hero = () => {
@@ -21,14 +23,14 @@ const Hero = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="https://via.placeholder.com/600x400/0000FF/808080?text=Imagen%201"
+                  src={ia}
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="https://via.placeholder.com/600x400/FF0000/808080?text=Imagen%202"
+                  src={ia2}
                   alt="Second slide"
                 />
               </Carousel.Item>
