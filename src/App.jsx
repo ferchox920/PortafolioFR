@@ -1,24 +1,19 @@
 import Navbar from "./Components/NavBar/NavBar";
-import { Route, Routes } from "react-router";
-import "./App.css";
-import Home from "./View/Home/Home";
-import LandingPage from "./View/Landing/LandingPage";
-
 import Cards from "./Components/Cards/Cards";
-import Description from "./Components/Description/Description";
+import Description from "./Components/Description/Description.jsx";
 import Footer from "./Components/Footer/Footer";
+import Hero from "./Components/Hero/Hero";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Hero />
       <Description />
       <Cards />
       <Footer/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/landing" element={<LandingPage />} />
-      </Routes>
+      
     </div>
   );
 }
