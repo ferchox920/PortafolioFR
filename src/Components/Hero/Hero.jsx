@@ -1,5 +1,7 @@
 import React from "react";
 import "./Hero.css";
+import certificado from "../../assets/certificado.png";
+import io from "../../assets/io.jpg";
 import ia from "../../assets/ia1.png";
 import ia2 from "../../assets/ia2.png";
 import ia3 from "../../assets/ia3.png";
@@ -24,16 +26,46 @@ const Hero = () => {
           <Col md={6}>
             <Carousel>
               <Carousel.Item>
-                <img className="d-block w-100" src={ia} alt="First slide" />
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={io}
+                  alt="First slide"
+                />
               </Carousel.Item>
               <Carousel.Item>
-                <img className="d-block w-100" src={ia2} alt="Second slide" />
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={certificado}
+                  alt="Second slide"
+                />
               </Carousel.Item>
               <Carousel.Item>
-                <img className="d-block w-100" src={ia3} alt="Third slide" />
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={ia2}
+                  alt="Third slide"
+                />
               </Carousel.Item>
               <Carousel.Item>
-                <img className="d-block w-100" src={ia4} alt="Fourth slide" />
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={ia3}
+                  alt="Fourth slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={ia4}
+                  alt="Fifth slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={ia}
+                  alt="Six slide"
+                />
               </Carousel.Item>
             </Carousel>
           </Col>

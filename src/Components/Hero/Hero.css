@@ -1,5 +1,10 @@
 .hero {
-    margin-top: 70px; /* ajusta esta altura según la altura de tu navbar */
+    margin-top: 7rem; /* ajusta esta altura según la altura de tu navbar */
+    
+  }
+  .carousel-img {
+    width: 600px;
+    height: 400px;
   }
 
   .carousel-col {
@@ -7,4 +12,8 @@
     height: 400px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .d-block{
+    border-radius: 10px;
   }
