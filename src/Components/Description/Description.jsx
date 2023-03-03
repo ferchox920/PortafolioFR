@@ -6,7 +6,7 @@ function Description() {
     <Accordion defaultActiveKey="0" flush
     className="countainer">
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Sobre mi</Accordion.Header>
+        <Accordion.Header>Sobre mí</Accordion.Header>
         <Accordion.Body className="accordion-body">
           Como persona, me considero un apasionado del aprendizaje y siempre
           estoy buscando nuevas oportunidades para expandir mis conocimientos.
