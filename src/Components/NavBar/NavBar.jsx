@@ -22,10 +22,7 @@ function NavBar() {
                 <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <Form className="d-flex" role="search">
-              <FormControl type="search" placeholder="Search" aria-label="Search" className="me-2" />
-              <Button variant="success" type="submit">Search</Button>
-            </Form>
+          
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
