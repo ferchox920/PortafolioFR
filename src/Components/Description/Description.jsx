@@ -3,7 +3,8 @@ import "./Description.css";
 
 function Description() {
   return (
-    <Accordion defaultActiveKey="0" flush>
+    <Accordion defaultActiveKey="0" flush
+    className="countainer">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Sobre mi</Accordion.Header>
         <Accordion.Body className="accordion-body">
