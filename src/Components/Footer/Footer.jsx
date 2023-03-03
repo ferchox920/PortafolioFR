@@ -9,7 +9,7 @@ const Footer = () => {
       <Container>
         <Row className="align-items-center">
           <Col md={4}>
-            <p className="mb-0">Contact us: example@example.com</p>
+            <p className="mb-0">Contact me: fernandoramones92@gmail.com</p>
           </Col>
           <Col md={4}>
             <p className="mb-0 text-center">Follow us: 

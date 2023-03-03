@@ -4,6 +4,7 @@ import Footer from "./Components/Footer/Footer";
 import "./App.css";
 import Home from "./View/Home/Home";
 import { Route, Routes } from "react-router";
+import Repositore from "./View/Repositore/Repositore";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/ChangeForgetPassword" element={<ForgotPassword />} /> */}
+        <Route path="/Repositore" element={<Repositore />} /> 
       </Routes>
       {/* <Cards /> */}
 

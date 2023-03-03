@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="#">Fernando Ramones</Navbar.Brand>
+        <Navbar.Brand href="/">Fernando Ramones</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Offcanvas placement="end" aria-labelledby="navbar-nav">
           <Offcanvas.Header closeButton>
@@ -13,8 +13,8 @@ function NavBar() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="#" active>Home</Nav.Link>
-              <Nav.Link href="#">Link</Nav.Link>
+              <Nav.Link href="/" active>Home</Nav.Link>
+              <Nav.Link href="/Repositore">Link</Nav.Link>
               <NavDropdown title="Dropdown" id="navbar-dropdown">
                 <NavDropdown.Item href="#">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#">Another action</NavDropdown.Item>

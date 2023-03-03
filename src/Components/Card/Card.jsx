@@ -2,13 +2,13 @@ import React from "react";
 import { CardGroup, Card } from "react-bootstrap";
 import cerebrito from "../../assets/Cerebrito_alegre.svg";
 import earth from "../../assets/earth.png";
-import "./Card.css"
+import "./Card.css";
 
 const CardComponent = () => {
   return (
-    <CardGroup className="d-flex flex-wrap justify-content-center">
+    <CardGroup className="d-flex flex-wrap justify-content-center align-items-center">
       <Card className="psiconecct">
-        <Card.Img variant="top" src={cerebrito} />
+        <Card.Img variant="top" src={cerebrito} className="fixed-size" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -21,7 +21,7 @@ const CardComponent = () => {
         </Card.Body>
       </Card>
       <Card className="earth">
-        <Card.Img variant="top" src={earth} />
+        <Card.Img variant="top" src={earth} className="fixed-size" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
