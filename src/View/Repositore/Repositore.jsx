@@ -6,7 +6,7 @@ const Repositore = () => {
   return (
     <>
     <WriteMachine/>
-    <Cards/>
+    {/* <Cards/> */}
     
     </>
   )
