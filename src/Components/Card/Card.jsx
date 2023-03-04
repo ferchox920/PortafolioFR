@@ -8,7 +8,9 @@ const CardComponent = () => {
   return (
     <CardGroup className="d-flex flex-wrap justify-content-center align-items-center">
       <Card className="psiconecct">
-        <Card.Img variant="top" src={cerebrito} className="fixed-size" />
+        <a href="https://psiconnect-dev.vercel.app/" target="_blank">
+          <Card.Img variant="top" src={cerebrito} className="fixed-size" />
+        </a>
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -21,7 +23,9 @@ const CardComponent = () => {
         </Card.Body>
       </Card>
       <Card className="earth">
-        <Card.Img variant="top" src={earth} className="fixed-size" />
+        <a href="https://www.example.com" target="_blank">
+          <Card.Img variant="top" src={earth} className="fixed-size" />
+        </a>
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
