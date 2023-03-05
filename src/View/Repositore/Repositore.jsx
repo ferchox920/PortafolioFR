@@ -5,8 +5,8 @@ import WriteMachine from '../../Components/WriteMachine/WriteMachine'
 const Repositore = () => {
   return (
     <>
+    <Cards/>
     <WriteMachine/>
-    {/* <Cards/> */}
     
     </>
   )
