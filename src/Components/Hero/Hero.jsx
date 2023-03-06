@@ -1,25 +1,76 @@
 import React from "react";
 import "./Hero.css";
+import certificado from "../../assets/certificado.png";
+import io from "../../assets/io.jpg";
+import ia from "../../assets/ia1.png";
+import ia2 from "../../assets/ia2.png";
+import ia3 from "../../assets/ia3.png";
+import ia4 from "../../assets/ia4.png";
+import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
 
 const Hero = () => {
   return (
-    <div className="countainer">
-
-    <div class="container-fluid p-0">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="jumbotron jumbotron-fluid text-center bg-transparent">
-          <div class="container">
-            <h1 class="display-4">¡Bienvenido a mi portafolio!</h1>
-            <p class="lead">Aquí encontrarás información sobre mis habilidades y proyectos realizados.</p>
-            <hr class="my-4"/>
-            <a class="btn btn-lg btn-primary" href="#about-me" role="button">Sobre mi</a>
-            <a class="btn btn-lg btn-secondary" href="#my-work" role="button">Mis proyectos</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div className="hero">
+      <Container>
+        <Row className="align-items-center">
+          <Col md={6}>
+            <h1 className="mb-4">¡Hola, soy un desarrollador web!</h1>
+            <p className="lead mb-4">
+              Me encanta desarrollar sitios web y aplicaciones que hagan la vida
+              de las personas más fácil.
+            </p>
+            <Button variant="primary" size="lg">
+              Contáctame
+            </Button>
+          </Col>
+          <Col md={6}>
+            <Carousel>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={io}
+                  alt="First slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={certificado}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={ia2}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={ia3}
+                  alt="Fourth slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={ia4}
+                  alt="Fifth slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 carousel-img"
+                  src={ia}
+                  alt="Six slide"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
