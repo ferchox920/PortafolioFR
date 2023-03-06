@@ -6,11 +6,13 @@ import LandingPage from "./View/Landing/LandingPage";
 
 import Cards from "./Components/Cards/Cards";
 import Description from "./Components/Description/Description";
+import Hero from "./Components/Hero/Hero";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Hero/>
       <Description />
       <Cards />
       <Routes>
