@@ -1,0 +1,21 @@
+.containerAbout {
+    margin-top: 5rem;
+  }
+.profilePic {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .techStack {
+    margin-top: 20px;
+  }
+  
+  .icon {
+    color: #61dafb;
+    margin: 0px 10px;
+  }
+  
+  .iconLg {
+    font-size: 3rem;
+  }
+  
