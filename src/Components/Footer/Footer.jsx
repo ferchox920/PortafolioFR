@@ -13,13 +13,13 @@ const Footer = () => {
           </Col>
           <Col md={4}>
             <p className="mb-0 text-center">Follow us: 
-              <a href="#"><FaFacebook className="ms-2" /></a>
-              <a href="#"><FaTwitter className="ms-2" /></a>
-              <a href="#"><FaInstagram className="ms-2" /></a>
+              <a href="https://www.facebook.com/fernando.ramones.56/"><FaFacebook className="ms-2" /></a>
+              <a href="https://twitter.com/framonesb"><FaTwitter className="ms-2" /></a>
+              <a href="https://www.instagram.com/framonesborges/"><FaInstagram className="ms-2" /></a>
             </p>
           </Col>
           <Col md={4}>
-            <p className="mb-0 text-end">&copy; 2023 Example Company</p>
+            <p className="mb-0 text-end">&copy; 2023 FernandoR Company</p>
           </Col>
         </Row>
       </Container>
