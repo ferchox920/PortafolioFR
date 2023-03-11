@@ -19,7 +19,9 @@ const Hero = () => {
               Me encanta desarrollar sitios web y aplicaciones que hagan la vida
               de las personas más fácil.
             </p>
-            <Button variant="primary" size="lg">
+            <Button variant="primary" size="lg"
+            href="mailto:fernandoramones92@gmail.com"
+            >
               Contáctame
             </Button>
           </Col>
