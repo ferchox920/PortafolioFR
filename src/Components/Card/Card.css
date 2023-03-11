@@ -1,3 +1,12 @@
+.psiconecct {
+  
+  align-items: center;
+  background: linear-gradient(
+    190deg,
+    rgba(90, 232, 225, 0.69) 0%,
+    rgba(244, 241, 187, 0.576) 100%
+  );
+}
 
 .earth {
   background: linear-gradient(
@@ -7,11 +16,46 @@
   );
   align-items: center;
 }
-.psiconecct {
+.box1 {
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    190deg,
-    rgba(90, 232, 225, 0.69) 0%,
-    rgba(244, 241, 187, 0.576) 100%
-  );
+}
+
+.box1 .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box1 .card-body {
+  flex-grow: 1;
+}
+
+.box1 .card-img-top {
+  object-fit: contain;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+
+
+
+.img-fluid:hover {
+  animation: vibrate 0.3s linear infinite both;
+}
+
+@keyframes vibrate {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }

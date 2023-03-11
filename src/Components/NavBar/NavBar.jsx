@@ -1,5 +1,14 @@
-import React from 'react';
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, Offcanvas } from 'react-bootstrap';
+import React from "react";
+import {
+  Navbar,
+  Container,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+  Offcanvas,
+} from "react-bootstrap";
 
 function NavBar() {
   return (
@@ -13,16 +22,22 @@ function NavBar() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              
               <Nav.Link href="/About">About</Nav.Link>
-              <NavDropdown title="Dropdown" id="navbar-dropdown">
-                <NavDropdown.Item href="#">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#">Another action</NavDropdown.Item>
+              <NavDropdown title="Proyectos" id="navbar-dropdown">
+                <NavDropdown.Item
+                  href="https://psiconnect-dev.vercel.app/"
+                  target="_blank"
+                >
+                  Psiconnect
+                </NavDropdown.Item>
+                <NavDropdown.Item href="https://github.com/ferchox920/countries-pi"  target="_blank"
+                >Countries</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/Repositore">Ver todos mis proyectos</NavDropdown.Item>
+                <NavDropdown.Item href="/Repositore">
+                  Ver todos mis proyectos
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-          
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
