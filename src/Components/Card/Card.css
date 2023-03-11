@@ -1,11 +1,11 @@
 .psiconecct {
-  
   align-items: center;
   background: linear-gradient(
     190deg,
     rgba(90, 232, 225, 0.69) 0%,
     rgba(244, 241, 187, 0.576) 100%
   );
+  height: 100%;
 }
 
 .earth {
@@ -15,7 +15,9 @@
     rgba(152, 170, 194, 0.576) 100%
   );
   align-items: center;
+  height: 100%;
 }
+
 .box1 {
   padding: 5rem 5rem;
   display: flex;
@@ -28,6 +30,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.box1 .card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
 }
 
 .box1 .card-body {
@@ -36,25 +46,35 @@
 
 .box1 .card-img-top {
   object-fit: contain;
-  height: 200px;
+  height: 250px;
   margin-bottom: 1rem;
 }
-
-
-
 
 .img-fluid:hover {
   animation: vibrate 0.3s linear infinite both;
 }
 
 @keyframes vibrate {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
+
 a {
   text-decoration: none;
   color: inherit;
