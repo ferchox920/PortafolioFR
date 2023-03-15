@@ -1,45 +1,52 @@
 .hero {
   margin-top: 7rem;
   padding: 2rem;
-  }
-  
-  .carousel-img {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.carousel-img {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  }
-  
-  .carousel-item {
+}
+
+.carousel-item {
   display: flex;
   justify-content: center;
-  }
-  
-  .carousel-col {
+}
+
+.carousel-col {
   margin: auto;
   max-width: 600px;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
   .hero {
-  margin-top: 5rem;
+    margin-top: 5rem;
   }
   .carousel-col {
-  max-width: 400px;
+    max-width: 400px;
   }
-  }
-  
-  @media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 576px) {
   .hero {
-  margin-top: 3rem;
+    margin-top: 3rem;
   }
   .carousel-col {
-  max-width: 300px;
+    max-width: 300px;
   }
   .carousel-img {
-  height: 200px;
+    height: 200px;
   }
-  }
-  
-  .d-block {
+}
+
+.d-block {
   border-radius: 10px;
-  }
+}
+
+/* Transición */
+.hero.show {
+  opacity: 1;
+}
