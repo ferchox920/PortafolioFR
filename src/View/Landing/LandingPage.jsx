@@ -1,18 +1,23 @@
 import React from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './LandingPage.css';
 
 function LandingPage() {
+  AOS.init();
+  
   return (
     <div className="landing-page">
-      <div className="video-background">
-        <video autoPlay muted loop>
-          <source src="https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
-        </video>
-        <div className="video-overlay" />
-      </div>
-      <div className="content">
-        <h1>Lic. Fernando Ramones</h1>
-      </div>
+      <Container>
+        <Row>
+          <Col md={{ span: 8, offset: 2 }} className="text-center">
+            <h1 className="landing-title" data-aos="fade-up">FERNANDO RAMONES</h1>
+            <p className="landing-subtitle" data-aos="fade-up" data-aos-delay="100">Desarrollador Web Full-Stack</p>
+            <Button variant="primary" size="lg" href="/home" data-aos="fade-up" data-aos-delay="200">Entrar al sitio</Button>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

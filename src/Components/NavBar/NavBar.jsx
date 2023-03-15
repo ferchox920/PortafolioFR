@@ -14,7 +14,7 @@ function NavBar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="/">Fernando Ramones</Navbar.Brand>
+        <Navbar.Brand href="/home">Fernando Ramones</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Offcanvas placement="end" aria-labelledby="navbar-nav">
           <Offcanvas.Header closeButton>

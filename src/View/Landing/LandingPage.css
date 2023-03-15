@@ -1,55 +1,48 @@
 .landing-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1a1a1a;
+  background-color: #222;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.landing-subtitle {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.btn-primary {
+  background-color: #fff;
+  border-color: #fff;
+  color: #222;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-title {
+    font-size: 2.5rem;
   }
-  
-  .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  .landing-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
-  
-  .video-background video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
   }
-  
-  .video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: -1;
-  }
-  
-  .content {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    color: rgb(104, 16, 16);
-  }
-  
-  .content h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 0;
-    padding: 20px;
-    background-color: #f8f9fa;
-    display: inline-block;
-  }
+}
