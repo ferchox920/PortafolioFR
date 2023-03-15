@@ -1,74 +1,58 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
+import Carousel from "react-bootstrap/Carousel";
+import "./Card.css";
 import cerebrito from "../../assets/Cerebrito_alegre.svg";
 import earth from "../../assets/earth.png";
-import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import "./Card.css";
 
-function GridExample() {
+const cards = [
+  {
+    image: cerebrito,
+    alt: "Psiconnect",
+    title: "Psiconnect🧠💬",
+    description:
+      "Psiconnect es una aplicación web desarrollada como proyecto final del programa de formación en desarrollo web Full Stack de SoyHenry. La aplicación tiene como objetivo principal brindar a los usuarios un servicio de asesoramiento y terapia psicológica en línea.",
+    link: "https://github.com/Psiconnect/Psiconnect",
+    bgClass: "bg-blue",
+  },
+  {
+    image: earth,
+    alt: "Countries",
+    title: "Countries🌍",
+    description:
+      "La API de países permite acceder a información detallada de todos los países del mundo, incluyendo datos demográficos, geográficos, económicos y culturales. Además, permite realizar búsquedas y filtrados para obtener información específica. Es una herramienta muy útil para desarrollar aplicaciones relacionadas con viajes, comercio internacional, educación y mucho más.",
+    link: "https://ejemplo.com",
+    bgClass: "bg-green",
+  },
+];
+
+function CarouselExample() {
+  const renderCards = () => {
+    return cards.map((card) => (
+      <Carousel.Item key={card.title}>
+        <Card className={`card ${card.bgClass}`}>
+          <a href={card.link} target="_blank" rel="noopener noreferrer">
+            <Card.Img
+              variant="top"
+              src={card.image}
+              className="img-fluid"
+              alt={card.alt}
+            />
+          </a>
+          <Card.Body className="text-center">
+            <Card.Title>{card.title}</Card.Title>
+            <Card.Text>{card.description}</Card.Text>
+          </Card.Body>
+        </Card>
+      </Carousel.Item>
+    ));
+  };
+
   return (
-    <div style={{ marginTop: "5rem" }}>
-      <Row xs={1} md={2} className="box1">
-        <Col>
-          <Card className="psiconecct">
-            <a
-              href="https://psiconnect-dev.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Card.Img
-                variant="top"
-                src={cerebrito}
-                className="img-fluid"
-                style={{ maxWidth: "200px" }}
-              />
-            </a>
-            <Card.Body className="text-center">
-              <Card.Title>Psiconnect🧠💬</Card.Title>
-              <Card.Text>
-                Psiconnect es una aplicación web desarrollada como proyecto
-                final del programa de formación en desarrollo web Full Stack de
-                SoyHenry. La aplicación tiene como objetivo principal brindar a
-                los usuarios un servicio de asesoramiento y terapia psicológica
-                en línea.
-                <br />
-                <a href="https://github.com/Psiconnect/Psiconnect">Ir al Readme</a>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <Card className="earth">
-            <a
-              href="https://ejemplo.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Card.Img
-                variant="top"
-                src={earth}
-                className="img-fluid"
-                style={{ maxWidth: "200px" }}
-              />
-            </a>
-            <Card.Body className="text-center">
-              <Card.Title>Countries🌍</Card.Title>
-              <Card.Text>
-                La API de países permite acceder a información detallada de
-                todos los países del mundo, incluyendo datos demográficos,
-                geográficos, económicos y culturales. Además, permite realizar
-                búsquedas y filtrados para obtener información específica. Es
-                una herramienta muy útil para desarrollar aplicaciones
-                relacionadas con viajes, comercio internacional, educación y
-                mucho más.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+    <div className="carousel-container">
+      <Carousel fade>{renderCards()}</Carousel>
     </div>
   );
 }
 
-export default GridExample;
+export default CarouselExample;

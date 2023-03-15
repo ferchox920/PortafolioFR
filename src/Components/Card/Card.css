@@ -1,81 +1,89 @@
-.psiconecct {
-  align-items: center;
-  background: linear-gradient(
-    190deg,
-    rgba(90, 232, 225, 0.69) 0%,
-    rgba(244, 241, 187, 0.576) 100%
-  );
-  height: 100%;
-}
-
-.earth {
-  background: linear-gradient(
-    190deg,
-    rgba(55, 93, 207, 0.69) 0%,
-    rgba(152, 170, 194, 0.576) 100%
-  );
-  align-items: center;
-  height: 100%;
-}
-
-.box1 {
-  padding: 5rem 5rem;
+.carousel-container {
+  margin: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.box1 .card {
-  width: 100%;
+.carousel-container .carousel {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: stretch; /* Estirar las tarjetas para cubrir toda la altura */
+  height: 300px; /* Altura fija para las tarjetas */
+}
+
+.carousel-container .card {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+  background-color: #fff;
+  color: #000;
+  flex-basis: auto; /* Estirar la tarjeta para cubrir la altura completa del contenedor */
+  margin: 0 1rem; /* Agregar margen entre las tarjetas */
 }
 
-.box1 .card:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  transform: translateY(-5px);
+.carousel-container .card.bg-blue {
+  background: linear-gradient(
+    190deg,
+    rgba(64, 189, 180, 0.69) 0%,
+    rgba(26, 25, 22, 0.576) 100%
+  );
 }
 
-.box1 .card-body {
-  flex-grow: 1;
+.carousel-container .card.bg-green {
+  background: linear-gradient(
+    190deg,
+    rgba(55, 93, 207, 0.69) 0%,
+    rgba(6, 104, 35, 0.576) 100%
+  );
 }
 
-.box1 .card-img-top {
-  object-fit: contain;
-  height: 250px;
+.carousel-container .card .card-title {
+  font-weight: bold;
+}
+
+.carousel-container .card .card-text {
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
-.img-fluid:hover {
+.carousel-container .card .card-img-top {
+  object-fit: contain;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.carousel-container .card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.carousel-container .img-fluid:hover {
   animation: vibrate 0.3s linear infinite both;
 }
 
-@keyframes vibrate {
-  0% {
-    transform: translate(0);
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .carousel-container .carousel {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
   }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
+  .carousel-container .card {
+    margin: 1rem 0;
   }
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.carousel-container:hover .carousel-control-prev,
+.carousel-container:hover .carousel-control-next,
+.carousel-container:hover .carousel-indicators {
+  opacity: 1;
+}
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
