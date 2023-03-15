@@ -16,3 +16,9 @@
 .transicion-inactivo {
   display: none;
 }
+
+@media (max-width: 768px) {
+  .transicion-item {
+    font-size: 18px;
+  }
+}

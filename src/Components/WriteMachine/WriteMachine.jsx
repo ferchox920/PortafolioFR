@@ -29,7 +29,8 @@ const WriteMachine = () => {
     </Row>
   ));
 
-  return <Container className="transiciones">{elementos}</Container>;
+  return <Container fluid className="transiciones">{elementos}</Container>;
 };
 
 export default WriteMachine;
+
