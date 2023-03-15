@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Cards from '../../Components/Cards/Cards'
 import WriteMachine from '../../Components/WriteMachine/WriteMachine'
 
 const Repositore = () => {
+  const [loading, setLoading] = useState(true);
+
   return (
     <>
-    <Cards/>
-    <WriteMachine/>
-    
+      {loading && <div>Cargando...</div>}
+      <Cards onLoad={() => setLoading(false)} />
+      <WriteMachine onLoad={() => setLoading(false)} />
     </>
   )
 }

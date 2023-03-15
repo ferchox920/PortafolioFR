@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AboutInfo from '../../Components/About/AboutInfo'
 
 const About = () => {
+  const [loading, setLoading] = useState(true);
+
   return (
-    <AboutInfo/>
+    <>
+      {loading && <div>Cargando...</div>}
+      <AboutInfo onLoad={() => setLoading(false)} />
+    </>
   )
 }
 
