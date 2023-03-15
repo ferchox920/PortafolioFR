@@ -20,7 +20,7 @@ const AboutInfo = () => {
   return (
     <div className={`container ${styles.containerAbout}`}>
       <div className="row justify-content-center mt-5">
-        <div className="col-md-8">
+        <div className="col-md-10">
           <div className="card">
             <div className="card-header bg-dark text-white">
               <h4 className="mb-0">Sobre mí</h4>
@@ -86,22 +86,68 @@ const AboutInfo = () => {
                       >
                         <FaLinkedin className="me-2" />
                         LinkedIn
-                      </a>
-                    </div>
+                  </a>
+                </div>
+              </div>
+              <hr />
+              <h5 className="mb-3">Habilidades</h5>
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="d-flex align-items-center mb-2">
+                    <FaHtml5 className="me-2" />
+                    <span>HTML5</span>
                   </div>
-                  <hr />
-                  <div
-                    className={`d-flex justify-content-center align-items-center ${styles.techStack}`}
-                  >
-                    <FaHtml5 className={`${styles.icon} ${styles.iconLg}`} />
-                    <FaCss3Alt className={`${styles.icon} ${styles.iconLg}`} />
-                    <FaJsSquare className={`${styles.icon} ${styles.iconLg}`} />
-                    <FaReact className={`${styles.icon} ${styles.iconLg}`} />
-                    <FaNodeJs className={`${styles.icon} ${styles.iconLg}`} />
-                    <FaDatabase className={`${styles.icon} ${styles.iconLg}`} />
-                    <FaGitAlt className={`${styles.icon} ${styles.iconLg}`} />
-                    <FaJava className={`${styles.icon} ${styles.iconLg}`} />
-                    <FaPython className={`${styles.icon} ${styles.iconLg}`} />
+                  <div className="d-flex align-items-center mb-2">
+                    <FaCss3Alt className="me-2" />
+                    <span>CSS3</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-2">
+                    <FaJsSquare className="me-2" />
+                    <span>JavaScript</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-2">
+                    <FaReact className="me-2" />
+                    <span>React</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-2">
+                    <FaNodeJs className="me-2" />
+                    <span>Node.js</span>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="d-flex align-items-center mb-2">
+                    <FaDatabase className="me-2" />
+                    <span>MongoDB</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-2">
+                    <FaGitAlt className="me-2" />
+                    <span>Git</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-2">
+                    <FaJava className="me-2" />
+                    <span>Java</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-2">
+                    <FaPython className="me-2" />
+                    <span>Python</span>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="d-flex align-items-center mb-2">
+                    <FaReact className="me-2" />
+                    <span>React Native</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-2">
+                    <FaNodeJs className="me-2" />
+                    <span>Express.js</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-2">
+                    <FaJsSquare className="me-2" />
+                    <span>TypeScript</span>
+                  </div>
+                  <div className="d-flex align-items-center mb-2">
+                    <FaNodeJs className="me-2" />
+                    <span>Socket.io</span>
                   </div>
                 </div>
               </div>
@@ -110,7 +156,9 @@ const AboutInfo = () => {
         </div>
       </div>
     </div>
-  );
+  </div>
+</div>
+);
 };
 
 export default AboutInfo;
