@@ -1,19 +1,45 @@
 .hero {
-    margin-top: 7rem; /* ajusta esta altura según la altura de tu navbar */
-    
+  margin-top: 7rem;
+  padding: 2rem;
+  }
+  
+  .carousel-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  }
+  
+  .carousel-item {
+  display: flex;
+  justify-content: center;
+  }
+  
+  .carousel-col {
+  margin: auto;
+  max-width: 600px;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .hero {
+  margin-top: 5rem;
+  }
+  .carousel-col {
+  max-width: 400px;
+  }
+  }
+  
+  @media screen and (max-width: 576px) {
+  .hero {
+  margin-top: 3rem;
+  }
+  .carousel-col {
+  max-width: 300px;
   }
   .carousel-img {
-    width: 600px;
-    height: 400px;
+  height: 200px;
   }
-
-  .carousel-col {
-    max-width: 500px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
   }
-
-  .d-block{
-    border-radius: 10px;
+  
+  .d-block {
+  border-radius: 10px;
   }
