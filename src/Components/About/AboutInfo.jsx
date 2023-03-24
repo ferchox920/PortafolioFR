@@ -118,7 +118,7 @@ const AboutInfo = () => {
                     <div className="col-md-4">
                       <div className="d-flex align-items-center mb-2">
                         <FaDatabase className="me-2" />
-                        <span>MongoDB</span>
+                        <span>Postgresql</span>
                       </div>
                       <div className="d-flex align-items-center mb-2">
                         <FaGitAlt className="me-2" />
@@ -134,10 +134,7 @@ const AboutInfo = () => {
                       </div>
                     </div>
                     <div className="col-md-4">
-                      <div className="d-flex align-items-center mb-2">
-                        <FaReact className="me-2" />
-                        <span>React Native</span>
-                      </div>
+                      
                       <div className="d-flex align-items-center mb-2">
                         <FaNodeJs className="me-2" />
                         <span>Express.js</span>

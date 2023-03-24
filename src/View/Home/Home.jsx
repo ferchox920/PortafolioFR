@@ -7,8 +7,8 @@ const Home = () => {
 
   return (
     <>
-      <Hero onLoad={() => setLoading(false)} />
-      <Description onLoad={() => setLoading(false)} />
+      <Hero />
+      <Description  />
     </>
   )
 }
