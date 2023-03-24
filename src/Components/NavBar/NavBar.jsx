@@ -4,9 +4,7 @@ import {
   Container,
   Nav,
   NavDropdown,
-  Form,
-  FormControl,
-  Button,
+
   Offcanvas,
 } from "react-bootstrap";
 
@@ -32,6 +30,8 @@ function NavBar() {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="https://github.com/ferchox920/countries-pi"  target="_blank"
                 >Countries</NavDropdown.Item>
+                <NavDropdown.Item href="https://github.com/ferchox920/to-do"  target="_blank"
+                >To-Do-List</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/Repositore">
                   Ver todos mis proyectos
