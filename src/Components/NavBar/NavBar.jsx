@@ -1,16 +1,35 @@
-import React from "react";
+import React, { useRef, useEffect } from 'react';
 import {
   Navbar,
   Container,
   Nav,
   NavDropdown,
-
   Offcanvas,
-} from "react-bootstrap";
+} from 'react-bootstrap';
+import anime from 'animejs/lib/anime.es.js';
 
 function NavBar() {
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    anime({
+      targets: navbarRef.current,
+      translateY: [-50, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 1500,
+      delay: 500,
+    });
+  }, []);
+
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+    <Navbar
+      ref={navbarRef}
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      fixed="top"
+    >
       <Container>
         <Navbar.Brand href="/home">Fernando Ramones</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
@@ -28,10 +47,18 @@ function NavBar() {
                 >
                   Psiconnect
                 </NavDropdown.Item>
-                <NavDropdown.Item href="https://github.com/ferchox920/countries-pi"  target="_blank"
-                >Countries</NavDropdown.Item>
-                <NavDropdown.Item href="https://github.com/ferchox920/to-do"  target="_blank"
-                >To-Do-List</NavDropdown.Item>
+                <NavDropdown.Item
+                  href="https://github.com/ferchox920/countries-pi"
+                  target="_blank"
+                >
+                  Countries
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="https://github.com/ferchox920/to-do"
+                  target="_blank"
+                >
+                  To-Do-List
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/Repositore">
                   Ver todos mis proyectos

@@ -5,6 +5,18 @@ import "./Card.css";
 import cerebrito from "../../assets/Cerebrito_alegre.svg";
 import earth from "../../assets/earth.png";
 import todo from "../../assets/todo.png";
+import anime from 'animejs';
+
+function animateCardSize(card, newWidth, newHeight) {
+  anime({
+    targets: card,
+    width: newWidth,
+    height: newHeight,
+    easing: 'easeInOutQuad',
+    duration: 500
+  });
+}
+
 
 const cards = [
   {
