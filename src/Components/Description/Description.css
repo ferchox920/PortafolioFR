@@ -20,6 +20,8 @@
   
   @media (max-width: 992px) {
     .accordion {
+      margin-top: 3rem;
+      margin-bottom: 4rem;
       padding-left: 2rem;
       padding-right: 2rem;
     }
@@ -31,6 +33,8 @@
   
   @media (max-width: 768px) {
     .accordion {
+      margin-top: 3rem;
+      margin-bottom: 4rem;
       padding-left: 1rem;
       padding-right: 1rem;
     }
