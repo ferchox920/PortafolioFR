@@ -32,6 +32,10 @@
   );
   }
   
+  .carousel-container .card.bg-purple {
+  background: #dd62ff;
+  }
+  
   .carousel-container .card.bg-green {
   background: linear-gradient(
   190deg,

@@ -4,6 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "./Card.css";
 import cerebrito from "../../assets/Cerebrito_alegre.svg";
 import earth from "../../assets/earth.png";
+import todo from "../../assets/todo.png";
 
 const cards = [
   {
@@ -24,6 +25,14 @@ const cards = [
     link: "https://ejemplo.com",
     bgClass: "bg-green",
   },
+  {
+    image: todo,
+    alt: "Texto alternativo de la imagen",
+    title: "To-Do List con autenticación JWT",
+    description: "Este proyecto es un backend para una aplicación de To-Do List que utiliza Nest.js como framework. Está tipado en TypeScript para mejorar la calidad y seguridad del código. Además, se implementa un procedimiento de autenticación utilizando JSON Web Tokens (JWT) para garantizar la seguridad y privacidad de los usuarios. Los usuarios pueden crear, actualizar y eliminar tareas, así como marcarlas como completadas. También pueden acceder a sus tareas personales.",
+    link: "https://github.com/ferchox920/to-do",
+    bgClass: "bg-purple"
+    }
 ];
 
 function CarouselExample() {
