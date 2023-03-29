@@ -11,6 +11,13 @@ import anime from "animejs/lib/anime.es.js";
 
 const Hero = () => {
   const heroRef = useRef(null);
+  
+  function downloadFile() {
+    const link = document.createElement("a");
+    link.href = "/../src/assets/CvFernandoRamones.pdf";
+    link.download = "CvFernandoRamones.pdf";
+    link.click();
+  }
 
   useEffect(() => {
     anime
@@ -28,7 +35,7 @@ const Hero = () => {
         duration: 1200,
       })
       .add({
-        targets: heroRef.current.querySelector(".btn-primary"),
+        targets: heroRef.current.querySelector(".button-container"),
         translateY: ["-50", "0"],
         opacity: [0, 1],
         duration: 1200,
@@ -47,14 +54,30 @@ const Hero = () => {
         <Row className="align-items-center">
           <Col md={6}>
             <h1 className="mb-4">¡Hola, soy un desarrollador web!</h1>
+            <div className="button-container">
+              <Button
+              className="btn1"
+                variant="primary"
+                size="lg"
+                href="mailto:fernandoramones92@gmail.com"
+                style={{ marginRight: "10px" }} // Agregamos margen al primer botón
+              >
+                Contáctame
+              </Button>
+              <Button
+                variant="primary"
+                size="lg"
+                onClick={() => downloadFile()}
+              >
+                Descargar mi currículum
+              </Button>
+            </div>
             <p className="lead mb-4">
               Me encanta desarrollar sitios web y aplicaciones que hagan la vida
               de las personas más fácil.
             </p>
-            <Button variant="primary" size="lg" href="mailto:fernandoramones92@gmail.com">
-              Contáctame
-            </Button>
           </Col>
+
           <Col md={6}>
             <Carousel className="carousel">
               <Carousel.Item>
@@ -105,7 +128,7 @@ const Hero = () => {
                   style={{ height: "400px", objectFit: "cover" }}
                 />
               </Carousel.Item>
-              </Carousel>
+            </Carousel>
           </Col>
         </Row>
       </Container>

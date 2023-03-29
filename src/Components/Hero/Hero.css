@@ -8,6 +8,7 @@
     height: 400px;
     object-fit: cover;
   }
+
 }
 
 /* Estilos para pantallas medianas */
@@ -15,6 +16,9 @@
   .carousel-img {
     height: 300px;
     object-fit: cover;
+  }
+  .btn1{
+    margin-bottom: 1rem;
   }
 }
 
@@ -24,4 +28,5 @@
     height: 200px;
     object-fit: cover;
   }
+  
 }
