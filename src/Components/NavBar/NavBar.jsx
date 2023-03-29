@@ -34,9 +34,7 @@ function NavBar() {
         <Navbar.Brand href="/home">Fernando Ramones</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Offcanvas placement="end" aria-labelledby="navbar-nav">
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Dark offcanvas</Offcanvas.Title>
-          </Offcanvas.Header>
+          
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link href="/About">About</Nav.Link>
