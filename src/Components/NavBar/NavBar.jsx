@@ -40,7 +40,7 @@ function NavBar() {
               <Nav.Link href="/About">About</Nav.Link>
               <NavDropdown title="Proyectos" id="navbar-dropdown">
                 <NavDropdown.Item
-                  href="https://psiconnect-dev.vercel.app/"
+                  href="https://psiconnect.vercel.app/"
                   target="_blank"
                 >
                   Psiconnect
