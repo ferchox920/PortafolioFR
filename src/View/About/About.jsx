@@ -4,8 +4,7 @@ import AboutInfo from '../../Components/About/AboutInfo'
 const About = () => {
 
   return (
-    <>
-     
+    <> 
       <AboutInfo/>
     </>
   )

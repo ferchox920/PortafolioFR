@@ -60,7 +60,7 @@ const Hero = () => {
                 variant="primary"
                 size="lg"
                 href="mailto:fernandoramones92@gmail.com"
-                style={{ marginRight: "10px" }} // Agregamos margen al primer botón
+                style={{ marginRight: "10px" }} 
               >
                 Contáctame
               </Button>
